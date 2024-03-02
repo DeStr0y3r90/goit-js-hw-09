@@ -76,15 +76,15 @@ ulGallery.insertAdjacentHTML(
   (imgGalleryList = images.reduce(
     (html, image) =>
       html +
-      `<li class='gallery-item'>
-   <a class='gallery-link' href='${image.original}'>
-         <img 
-             class='gallery-image'
-             src='${image.preview}'             
-             alt='${image.description}'
-         />
-   </a>
-  </li>`,
+      <li class="gallery-item">
+	<a class="gallery-link" href="large-image.jpg">
+		<img 
+			class="gallery-image" 
+			src="small-image.jpg" 
+			alt="Image description" 
+			/>
+	</a>
+</li>,
     ''
   ))
 );
